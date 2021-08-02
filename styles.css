@@ -1,0 +1,186 @@
+body {
+  background-color: #000;
+}
+
+body.bg-films {
+  background-image: url('assets/images/background.jpg');
+  background-color: rgba(0, 0, 0, 0.295);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  padding: 25px 40px;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.7861519607843137) 100%
+  );
+}
+
+header .logo {
+  width: 160px;
+}
+
+#caixa-login {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 50px;
+  border-radius: 5px;
+}
+
+#caixa-login img {
+  background: #fff;
+  width: 20px;
+}
+
+.txt-h1 {
+  font-size: 35px;
+}
+
+input[type='checkbox'] {
+  position: relative;
+  cursor: pointer;
+}
+
+input[type='checkbox']:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  border-radius: 3px;
+  background-color: #818181;
+}
+
+input[type='checkbox']:checked:after {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: solid #000;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 2px;
+  left: 6px;
+}
+
+.txt-grey {
+  color: #929292;
+  transition: 0.2s;
+}
+
+a.txt-grey:hover {
+  text-decoration: none;
+  color: #aaa8a8;
+}
+
+.button-login {
+  background: #e50914;
+}
+
+.background-secondary {
+  background: rgba(51, 51, 51, 0.788);
+  border: none;
+}
+
+.background-secondary:focus {
+  background: rgba(51, 51, 51, 0.788);
+  border: none;
+  color: #fff;
+}
+.fa-facebook-square {
+  color: #3b5998;
+  font-size: 22px;
+}
+
+.fa-globe {
+  color: #929292;
+  font-size: 20px;
+}
+
+.txt-small {
+  font-size: 14px;
+}
+
+.text-small-footer {
+  font-size: 12px;
+}
+
+.text-medium-footer {
+  font-size: 20px;
+}
+
+.background-secondary::-webkit-input-placeholder {
+  color: #aaa8a8;
+  font-size: 15px;
+}
+.background-secondary::-moz-placeholder {
+  color: #aaa8a8;
+  font-size: 15px;
+}
+.background-secondary:-ms-input-placeholder {
+  color: #aaa8a8;
+  font-size: 15px;
+}
+.background-secondary:-moz-placeholder {
+  color: #aaa8a8;
+  font-size: 15px;
+}
+
+.footer-container {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(1, 1, 1, 0.43881302521008403) 3%,
+    rgba(2, 2, 2, 0.5452556022408963) 7%,
+    rgba(0, 0, 0, 0.8) 30%,
+    rgba(0, 0, 0, 0.8) 70%,
+    rgba(0, 0, 0, 0.55) 93%,
+    rgba(0, 0, 0, 0.44) 97%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+}
+
+.select-lang {
+  width: 150px;
+  height: 50px;
+  background: #000;
+  border: none;
+  color: #aaa8a8;
+  outline: none;
+}
+
+.select-lang:hover {
+  border: none;
+}
+
+.select-lang option {
+  border: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e50914;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #bb030d;
+}
