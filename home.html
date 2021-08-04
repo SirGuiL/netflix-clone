@@ -21,10 +21,76 @@
       referrerpolicy="no-referrer"
     />
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css"
+    />
+    <link
       rel="shortcut icon"
       href="./assets/images/netflix.png"
       type="image/png"
     />
   </head>
-  <body></body>
+  <body>
+    <div class="container-fluid">
+      <header class="header-home row">
+        <div class="col-2">
+          <img src="./assets/images/logo.png" alt="Logo" class="logo" />
+        </div>
+        <div class="col-8">
+          <ul class="menu-list">
+            <li>
+              <a href="#"> Inicio </a>
+            </li>
+            <li>
+              <a href="#"> Séries </a>
+            </li>
+            <li>
+              <a href="#"> Filmes </a>
+            </li>
+            <li>
+              <a href="#"> Mais Recentes </a>
+            </li>
+            <li>
+              <a href="#"> Minha Lista </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+    </div>
+    <div id="hero" class="container-fluid">
+      <div class="container">
+        <div class="row" id="hero-infos">
+          <div class="col-6">
+            <img
+              src="./assets/images/diabo-de-cada-dia.png"
+              alt="logo"
+              class="logo-hero"
+              draggable="false"
+            />
+            <h1 class="text-white">
+              <img
+                src="./assets/images/badge-top-10.png"
+                alt="top-10"
+                draggable="false"
+              />
+              Top 1 de hoje no Brasil
+            </h1>
+            <p class="text-white">
+              Pregadores Profanos. Autoridades Corruptas. Amantes Assassinos.
+              Numa cidade cheia de pecadores, um jovem busca justiça.
+            </p>
+            <br />
+            <button class="btn btn-lg button-white">
+              <span class="mdi mdi-play"></span>
+              Assistir
+            </button>
+            <button class="btn btn-lg button-translucent">
+              <span class="mdi mdi-information-outline"></span>
+              Mais informações
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
