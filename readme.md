@@ -17,4 +17,6 @@ clone of the Netflix interface made in Silvio Luis classes from the <a href="htt
     <img src="./assets/screenshots/login.png">
     Home screen hero
     <img src="./assets/screenshots/home-screen.png">
+    Full home screen
+    <img src="./assets/screenshots/full-home.png">
 </div>
