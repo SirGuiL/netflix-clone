@@ -17,17 +17,38 @@ header .logo {
   width: 160px;
 }
 
+.buttons-container {
+  display: flex;
+}
+
 .button-white {
   background: #fff;
   color: #000;
   transition: 0.2s;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
 }
 
 .button-translucent {
   background: rgba(255, 255, 255, 0.2);
-  opacity: 0.6;
   color: #ffffff;
   transition: 0.2s;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.button-white span,
+.button-translucent span {
+  margin-right: 5px;
+  font-size: 26px;
 }
 
 .button-translucent:hover {
@@ -37,6 +58,19 @@ header .logo {
 
 .button-white:hover {
   opacity: 0.8;
+}
+
+.btn-custom-round {
+  padding: 5px 9px !important;
+}
+
+.btn-custom-round .mdi-play {
+  font-size: 16px;
+  color: #000;
+}
+
+.opacity-50 {
+  opacity: 0.5;
 }
 
 /* Custom scrollbar */
@@ -285,6 +319,18 @@ a.txt-grey:hover {
   top: 0;
 }
 
+#hero::after {
+  content: '';
+  width: 100%;
+  height: 350px;
+  display: block;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  top: calc(700px - 350px);
+}
+
 #hero-infos {
   padding: 0;
   margin-top: 160px;
@@ -325,4 +371,79 @@ a.txt-grey:hover {
 
 #age .box h2 {
   font-size: 18px;
+}
+
+.main-content {
+  margin-top: 700px;
+}
+
+.movie-list {
+  overflow-x: scroll;
+  list-style: none;
+  white-space: nowrap;
+  padding: 20px 0;
+  display: block;
+}
+
+.movie-list::-webkit-scrollbar {
+  display: none;
+}
+
+.movie {
+  display: inline-block;
+  width: 250px;
+  margin-right: 10px;
+  border-radius: 3px;
+  overflow: hidden;
+  transition: 0.3s;
+  float: none;
+}
+
+.movie:first-child {
+  margin-left: 85px;
+}
+
+.movie-info {
+  background-color: #171717;
+  padding: 10px;
+  height: 100px;
+  width: 100%;
+  transform: scale(0);
+  transition: 0.2s;
+}
+
+.movie:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  z-index: 999;
+}
+
+.movie:hover .movie-info {
+  transform: scale(1);
+}
+
+.movie-info .col-12 {
+  margin-top: 5px;
+}
+
+.movie-info .col-12:first-child {
+  margin-bottom: 20px;
+}
+
+.movie-info p {
+  color: #7e7b7b;
+  font-size: 12px;
+}
+
+.movie-info p font {
+  color: #fff;
+}
+
+section {
+  margin-bottom: -100px;
+  position: relative;
+}
+
+section:hover {
+  z-index: 9;
 }
