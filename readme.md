@@ -13,10 +13,12 @@ clone of the Netflix interface made in Silvio Luis classes from the <a href="htt
 ### Screenshots
 
 <div>
-    Login screen
-    <img src="./assets/screenshots/login.png">
-    Home screen hero
-    <img src="./assets/screenshots/home-screen.png">
-    Full home screen
-    <img src="./assets/screenshots/full-home.png">
+    Login screen <br>
+    <img src="./assets/screenshots/login.png"><br>
+    Home screen hero <br>
+    <img src="./assets/screenshots/home-screen.png"><br>
+    Full home screen <br>
+    <img src="./assets/screenshots/full-home.png"><br>
+    Card <br>
+    <img src="./assets/screenshots/card-series.png"><br>
 </div>

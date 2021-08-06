@@ -383,6 +383,8 @@ a.txt-grey:hover {
   white-space: nowrap;
   padding: 20px 0;
   display: block;
+  overflow: auto;
+  border: 1px solid transparent;
 }
 
 .movie-list::-webkit-scrollbar {
@@ -396,7 +398,8 @@ a.txt-grey:hover {
   border-radius: 3px;
   overflow: hidden;
   transition: 0.3s;
-  float: none;
+  overflow: auto;
+  border: 1px solid transparent;
 }
 
 .movie:first-child {
@@ -406,7 +409,6 @@ a.txt-grey:hover {
 .movie-info {
   background-color: #171717;
   padding: 10px;
-  height: 100px;
   width: 100%;
   transform: scale(0);
   transition: 0.2s;
@@ -424,6 +426,7 @@ a.txt-grey:hover {
 
 .movie-info .col-12 {
   margin-top: 5px;
+  padding: 0;
 }
 
 .movie-info .col-12:first-child {
@@ -446,4 +449,60 @@ section {
 
 section:hover {
   z-index: 9;
+}
+
+.card-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+}
+
+.percent {
+  color: #02ac02;
+}
+
+.card-flex .card-box {
+  background: #e50914;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 5px 2px 3px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 3px;
+}
+
+.card-flex .card-box font {
+  font-size: 12px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.card-flex .hd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ececec;
+  font-size: 10px;
+  border: 1px solid #dfdfdf;
+  border-radius: 3px;
+  padding: 1px 3px 0 4px;
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+.card-flex .tags {
+  display: flex;
+  white-space: normal;
+  align-items: center;
+  justify-content: center;
+}
+
+.point {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #dfdfdf;
+  margin: 5px;
 }
