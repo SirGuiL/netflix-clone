@@ -506,3 +506,106 @@ section:hover {
   background: #dfdfdf;
   margin: 5px;
 }
+
+/* modal */
+.modal-dialog,
+.modal-content {
+  background: #171717;
+}
+
+.modal-dialog {
+  max-width: 600px;
+}
+
+.modal-hero {
+  height: 300px;
+  background-image: url(assets/images/filmes/gotham-banner.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px;
+  margin-bottom: 20px;
+}
+
+.modal-hero::after {
+  content: '';
+  width: 100%;
+  height: 250px;
+  display: block;
+  background: linear-gradient(180deg, rgba(23, 23, 23, 0) 0%, #171717 100%);
+  position: absolute;
+  margin-top: -205px;
+  left: 0;
+  z-index: 1;
+}
+
+.modal-hero img {
+  width: 250px;
+  margin-top: 40px;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 40px;
+}
+
+.modal-hero-infos {
+  display: flex;
+  position: relative;
+  z-index: 2;
+}
+
+.modal-hero-infos a {
+  margin-right: 5px;
+}
+
+.modal-hero-infos button:first-child {
+  margin-right: 20px;
+}
+
+.description-movie {
+  font-size: 14px;
+  color: #fff;
+}
+
+.cast-movie {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.cast-movie text {
+  color: #fff;
+}
+
+.cast-movie text a {
+  color: #fff;
+  font-style: italic;
+}
+
+#seasons {
+  background: #2b2b2b;
+  color: #fff;
+  border: 1px solid #5e5e5e;
+  outline: none;
+}
+
+.episodes-list {
+  list-style: none;
+  padding: 0;
+}
+
+.episodes-list li:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.episodes-list li {
+  padding: 10px;
+}
+
+.episodes-list p {
+  font-size: 12px;
+}
+
+::selection {
+  color: #fff;
+  background-color: #e50914;
+}
